@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 550px;  
+            border-collapse: collapse ;  
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray ;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+
+        
+        td.numero {
+            text-align: right;
+        }
+
+        col.cEst {
+            background-color: brown;
+            
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    
+<table>
+
+    <CAPtion>População das Unidades Federativas</CAPtion>
+
+    <thead>
+
+        <colgroup>
+            <col class="cEst">
+            <col class="cPop">
+            <col class="ccol 03">
+            <col class="ccol 04">
+            <col class="ccol 05">
+
+        </colgroup>
+
+
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+            <th>coluna 03</th>
+            <th>coluna 04</th>
+            <th>coluna 05</th>
+        </tr>
+    </thead>
+
+    
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 081 801</td>
+                <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+            </tr>
+
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="numero">21 393 441</td><td>col 03</td>
+                    <td>col 04</td>
+                    <td>col 05</td>       
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17 223 547</td>
+                    <td>col 03</td>
+                    <td>col 04</td>
+                    <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="numero">14 870 907</td>
+                    <td>col 03</td>
+                    <td>col 04</td>
+                    <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="numero">11 890 517</td>
+                    <td>col 03</td>
+                    <td>col 04</td>
+                    <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="numero">11 233 263</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="numero">9 562 007</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="numero">9 268 836</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="numero">8 711 196</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Santa catarina</td>
+                    <td class="numero">8 187 029</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="numero">7 423 629</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="numero">7 018 211</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="numero">4 321 616</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="numero">4 164 468</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td class="numero">4 126 854</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="numero">3 893 659</td>
+                    <td>col 03</td>
+                <td>col 04</td>
+                <td>col 05</td>
+                </tr>
+                
+        </tbody>   
+
+    <tfoot>
+        <tr>
+            <th scope="row">Total da População</th>
+            <td class="numero"><strong>213.421.037</strong></td>
+        </tr>
+    </tfoot>
+</table>   
+
